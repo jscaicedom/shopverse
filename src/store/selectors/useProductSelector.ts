@@ -1,5 +1,5 @@
 import { useSelector } from 'react-redux';
-import { RootState } from '../types';
+import { RootState } from '../store';
 
 export const selectProductState = (state: RootState) => state.products;
 

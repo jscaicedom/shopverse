@@ -1,7 +1,7 @@
 import { Product } from "@/types/product";
 
-export async function fetchProducts(): Promise<Product[]> {
-  const apiUrl = 'https://dummyjson.com/products';
+export async function fetchProducts(page: number): Promise<Product[]> {
+  const apiUrl = `https://dummyjson.com/products?limit=10&skip=${page}`;
   const response = await fetch(apiUrl);
   const data: ProductApiResponse = await response.json();
 
