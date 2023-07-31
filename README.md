@@ -7,7 +7,7 @@ and Tailwind CSS.
 
 JSON API : https://dummyjson.com/products
 
-# Main Features:
+## Main Features:
 -List of the products in a grid layout. Each
 product card includes:
 ○ Product image
@@ -17,9 +17,12 @@ product card includes:
 ○ Rating 
 
 -infinite scroll.
+
 -search bar to filter products by title. The search is case-insensitive and update
 the product listing in real-time as the user types.
+
 -sorting for the products (by price, title or rating).
+
 -the ability to add and remove products to a shopping cart and display the total number of items and the
 total price in a fixed header
 
