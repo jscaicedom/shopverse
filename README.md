@@ -1,8 +1,30 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+## ShopVerse | React (Next.js) E-commerce Product Listing Page with Server Side Rendering
 
-First, run the development server:
+e-commerce product listing page using Next.js, Redux, Typescript
+and Tailwind CSS.
+
+JSON API : https://dummyjson.com/products
+
+# Main Features:
+-List of the products in a grid layout. Each
+product card includes:
+○ Product image
+○ Product name
+○ Product description (truncate to 100 characters)
+○ Price 
+○ Rating 
+
+-infinite scroll.
+-search bar to filter products by title. The search is case-insensitive and update
+the product listing in real-time as the user types.
+-sorting for the products (by price, title or rating).
+-the ability to add and remove products to a shopping cart and display the total number of items and the
+total price in a fixed header
+
+
+## To get startet
 
 ```bash
 npm run dev
