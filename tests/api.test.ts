@@ -27,12 +27,12 @@ describe('fetchProducts', () => {
       json: () => Promise.resolve(mockApiResponse),
     });
 
-    const products = await fetchProducts();
+    const products = await fetchProducts(0);
 
     expect(products).toHaveLength(2);
     expect(products[0].title).toBe('Product 1');
     expect(products[1].description).toBe('Description for Product 2');
 
-    expect(fetch).toHaveBeenCalledWith('https://dummyjson.com/products');
+    expect(fetch).toHaveBeenCalledWith('https://dummyjson.com/products?limit=10&skip=0');
   });
 });
